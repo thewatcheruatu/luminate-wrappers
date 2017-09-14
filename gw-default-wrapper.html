@@ -1,0 +1,147 @@
+<script>
+console.log( 'Luminate Application ID', [[S4]] );
+</script>
+[[?x1014x1017x1046x::x[[S4]]x::
+<!-- Admin comment -->
+<!--
+	LUMINATE APPLICATION ID
+	1: Donation (?, seems to be the confirmation page on event ticket purchases)
+	2: Calendar (i.e., event)
+	5: Tell A Friend
+	9: Donations 2 (see also 1046)
+	17: Survey
+	20: Directory ( profile display - not update page )
+	22: Secure Survey
+	23: Secure Page Server (Main API form)
+	24: DU ( directory profile update )
+	25: Ticketed Events
+	42: Message Viewer
+	82: ConsInterestsUser ( e-mail prefs, maybe something else? )
+	83: CO
+	186: Service Center ? ( not sure where this is used )
+	200: PageNavigator
+	1014: SurveyAdmin
+	1017: PageBuilderPreview
+	1046: Donations 2 Admin Preview
+	2001: SPageNavigator ( secure pages )
+	3301: PageBuilderAdmin
+	6110: ??? GW Gift Service Center - https://secure2.convio.net/gwu/site/UserCenter
+-->
+::]]
+[[S51:wrapper_global_warning]]
+[[?x5x9x17x22x24x42x82x83x200x201x1014x1017x1046x3301x6110x::x[[S4]]x::
+<!-- Pagebuilder pages -->
+
+<script src='../js/gwu_wrpr/gw-default-asap.js'></script>
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../js/jquery-2.2.4.min.js"><\/script>')</script>
+<script>jQuery.noConflict();</script>
+<script src='../js/gwu_wrpr/gw-utilities.min.js'></script> 
+<script src='../js/gwu_wrpr/gw-default.min.js'></script> 
+[[?x9x1046x::x[[S4]]x::
+<script src='../js/gwu_wrpr/gw-default-donations2.min.js'></script> 
+::]]
+[[?x1x2x25x::x[[S4]]x::
+<script src='../js/gwu_wrpr/gw-default-events.min.js'></script> 
+::]]
+
+[[?x17x22x::x[[S4]]x::
+<script src='../js/gwu_wrpr/gw-default-surveys.min.js'></script> 
+::]]
+
+[[?x24x82x6110x::x[[S4]]x::
+<script src='../js/gwu_wrpr/gw-default-user-service-center.js'></script> 
+::]]
+
+[[?x200x::x[[S4]]x::
+<div class='hidden' id='general-wrapper'></div>
+::]]
+[[?x1x2x25x::x[[S4]]x::
+<div class='hidden' id='events-wrapper'></div>
+::]]
+<header>
+	<div class='wrapper'>
+        <a href='http://campaign.gwu.edu' class='logo'>
+        <img id="logo-making-history" class="logo" src="../images/gwu_wrpr/logos/gw_atx_2cs_rev-small.png" alt="The George Washington University">
+        </a>
+    </div>
+</header>
+<nav>
+	<div class='wrapper'>
+    <ul>
+        <li><a href="http://alumni.gwu.edu/">Alumni</a></li>
+        <li><a href="http://campaign.gwu.edu/">Campaign for GW</a></li>
+        <li><a href="http://connect.gwu.edu/site/Calendar?=&amp;mode=list">Events</a></li>
+    </ul>
+    </div>
+</nav>
+
+<main>
+[[S63:2]]
+</main>
+
+<footer>
+    <a href='http://www.gwu.edu' class='logo'>
+    <img src="../images/gwu_wrpr/logos/gwu-horizontal-reverse-300x42.png" alt="The George Washington University" title="The George Washington University" class='logo'>
+    </a>
+[[S51:gw_default_footer_links]]
+</footer>
+
+<script type="text/javascript">
+if ( ! convio_pagename && '[[T6:[[A14]]]]' !== '' ) {
+	var convio_pagename = '[[T6:[[A14]]]]';
+}
+</script>
+[[S51:GTM_script]]
+
+::
+
+<!-- Old Wrapper. All other pages (i.e., not Page Builder) -->
+
+<div id="container">
+[[S51:reus_wrpr_header_1461]]
+<!-- //////////////////////// MAIN ////////////////////////// -->
+<div id="main" role="main">
+<div class="limiter">
+<!-- local header pw2 -->
+
+<!-- //////////////////////// CONTENT FIRST ////////////////////////// -->
+<!-- //////////////////////// ALL PURPOSE DETAIL ////////////////////////// -->
+<div id="content" class="content">
+<div class="all-purpose-detail pane clearfix section">
+
+
+[[S63:3]]
+
+</div> <!-- end all-purpose-detail -->
+</div><!-- end content -->
+</div><!-- end limiter-->
+
+<div class="footer">
+<!-- no footer content -->
+</div>
+
+</div><!-- end main-->
+
+<div id="footer" class="footer">
+[[S51:reus_wrpr_footer_1461]]
+</div> <!-- end footer -->
+</div> <!--! end of #container -->
+[[S51:reus_wrpr_footer_global_scripts]]
+
+<script type="text/javascript">
+(function($) {
+	$(document).ready(function() {
+		$(window).on('resize', function() {
+			gwLayout.all();
+		}).resize();
+	});
+
+}) (jQuery);
+</script>
+
+]]
+
