@@ -41,8 +41,11 @@ console.log( 'Luminate Application ID', [[S4]] );
 <script>jQuery.noConflict();</script>
 <script src='../js/gwu_wrpr/gw-utilities.min.js'></script> 
 <script src='../js/gwu_wrpr/gw-default.min.js'></script> 
-[[?x9x1046x::x[[S4]]x::
+[[?x9x::x[[S4]]x::
 <script src='../js/gwu_wrpr/gw-default-donations2.min.js'></script> 
+::]]
+[[?x1046x::x[[S4]]x::
+<script src='https://growlfrequency.com/work/luminate/js/gw-default-donations2.js'></script> 
 ::]]
 [[?x1x2x25x::x[[S4]]x::
 <script src='../js/gwu_wrpr/gw-default-events.min.js'></script> 
@@ -64,19 +67,20 @@ console.log( 'Luminate Application ID', [[S4]] );
 ::]]
 <header>
 	<div class='wrapper'>
-        <a href='http://campaign.gwu.edu' class='logo'>
-        <img id="logo-making-history" class="logo" src="../images/gwu_wrpr/logos/gw_atx_2cs_rev-small.png" alt="The George Washington University">
-        </a>
-    </div>
+		<a href='http://campaign.gwu.edu' class='logo'>
+		<img id="logo-making-history" class="logo" src="../images/gwu_wrpr/logos/gw_atx_2cs_rev-small.png" alt="The George Washington University">
+		</a>
+	</div>
 </header>
+
 <nav>
 	<div class='wrapper'>
-    <ul>
-        <li><a href="http://alumni.gwu.edu/">Alumni</a></li>
-        <li><a href="http://campaign.gwu.edu/">Campaign for GW</a></li>
-        <li><a href="http://connect.gwu.edu/site/Calendar?=&amp;mode=list">Events</a></li>
-    </ul>
-    </div>
+		<ul>
+			<li><a href="http://alumni.gwu.edu/">Alumni</a></li>
+			<li><a href="http://campaign.gwu.edu/">Campaign for GW</a></li>
+			<li><a href="http://connect.gwu.edu/site/Calendar?=&amp;mode=list">Events</a></li>
+		</ul>
+	</div>
 </nav>
 
 <main>
@@ -91,9 +95,11 @@ console.log( 'Luminate Application ID', [[S4]] );
 </footer>
 
 <script type="text/javascript">
+
 if ( ! convio_pagename && '[[T6:[[A14]]]]' !== '' ) {
 	var convio_pagename = '[[T6:[[A14]]]]';
 }
+
 </script>
 [[S51:GTM_script]]
 
@@ -104,43 +110,41 @@ if ( ! convio_pagename && '[[T6:[[A14]]]]' !== '' ) {
 <div id="container">
 [[S51:reus_wrpr_header_1461]]
 <!-- //////////////////////// MAIN ////////////////////////// -->
-<div id="main" role="main">
-<div class="limiter">
-<!-- local header pw2 -->
+	<div id="main" role="main">
+		<div class="limiter">
+		<!-- local header pw2 -->
 
-<!-- //////////////////////// CONTENT FIRST ////////////////////////// -->
-<!-- //////////////////////// ALL PURPOSE DETAIL ////////////////////////// -->
-<div id="content" class="content">
-<div class="all-purpose-detail pane clearfix section">
+		<!-- //////////////////////// CONTENT FIRST ////////////////////////// -->
+		<!-- //////////////////////// ALL PURPOSE DETAIL ////////////////////////// -->
+			<div id="content" class="content">
+				<div class="all-purpose-detail pane clearfix section">
 
 
-[[S63:3]]
+				[[S63:3]]
 
-</div> <!-- end all-purpose-detail -->
-</div><!-- end content -->
-</div><!-- end limiter-->
+				</div> <!-- end #content .all-purpose-detail -->
+			</div><!-- end #content -->
+		</div><!-- end #main .limiter-->
 
-<div class="footer">
-<!-- no footer content -->
-</div>
+	</div><!-- end #main-->
 
-</div><!-- end main-->
-
-<div id="footer" class="footer">
-[[S51:reus_wrpr_footer_1461]]
-</div> <!-- end footer -->
-</div> <!--! end of #container -->
+	<div id="footer" class="footer">
+	[[S51:reus_wrpr_footer_1461]]
+	</div> <!-- end #footer -->
+</div> <!--! end #container -->
 [[S51:reus_wrpr_footer_global_scripts]]
 
 <script type="text/javascript">
-(function($) {
-	$(document).ready(function() {
-		$(window).on('resize', function() {
-			gwLayout.all();
-		}).resize();
-	});
 
-}) (jQuery);
+(function( $ ) {
+	$( document ).ready( function() {
+		$( window ).on( 'resize', function() {
+			gwLayout.all();
+		} ).resize();
+	} );
+
+}) ( jQuery );
+
 </script>
 
 ]]
